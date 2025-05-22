@@ -1,1 +1,0 @@
-python -m pip install pandas owlready2 scikit-learn nltk
