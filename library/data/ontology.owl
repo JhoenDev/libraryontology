@@ -1,0 +1,1203 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://example.org/ontology"
+         xmlns="http://example.org/ontology#">
+
+<owl:Ontology rdf:about="http://example.org/ontology"/>
+
+<owl:ObjectProperty rdf:about="#hasType">
+  <rdfs:domain rdf:resource="#Document"/>
+  <rdfs:range rdf:resource="#Type"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#hasCategory">
+  <rdfs:domain rdf:resource="#Document"/>
+  <rdfs:range rdf:resource="#Category"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#belongsToCollege">
+  <rdfs:domain rdf:resource="#Document"/>
+  <rdfs:range rdf:resource="#College"/>
+</owl:ObjectProperty>
+
+<owl:DatatypeProperty rdf:about="#hasTitle">
+  <rdfs:domain rdf:resource="#Document"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasAuthor">
+  <rdfs:domain rdf:resource="#Document"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasDatePublished">
+  <rdfs:domain rdf:resource="#Document"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasPublisher">
+  <rdfs:domain rdf:resource="#Document"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasKeywords">
+  <rdfs:domain rdf:resource="#Document"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#hasAbstract">
+  <rdfs:domain rdf:resource="#Document"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:Class rdf:about="#Document"/>
+
+<owl:Class rdf:about="#Type"/>
+
+<owl:Class rdf:about="#Category"/>
+
+<owl:Class rdf:about="#College"/>
+
+<owl:Class rdf:about="#Article">
+  <rdfs:subClassOf rdf:resource="#Type"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Book">
+  <rdfs:subClassOf rdf:resource="#Type"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Research">
+  <rdfs:subClassOf rdf:resource="#Type"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Math">
+  <rdfs:subClassOf rdf:resource="#Category"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Science">
+  <rdfs:subClassOf rdf:resource="#Category"/>
+</owl:Class>
+
+<owl:Class rdf:about="#History">
+  <rdfs:subClassOf rdf:resource="#Category"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Computer">
+  <rdfs:subClassOf rdf:resource="#Category"/>
+</owl:Class>
+
+<owl:Class rdf:about="#CollegeOfComputerScience">
+  <rdfs:subClassOf rdf:resource="#College"/>
+</owl:Class>
+
+<owl:Class rdf:about="#CollegeOfEngineering">
+  <rdfs:subClassOf rdf:resource="#College"/>
+</owl:Class>
+
+<owl:Class rdf:about="#CollegeOfLaw">
+  <rdfs:subClassOf rdf:resource="#College"/>
+</owl:Class>
+
+<owl:NamedIndividual rdf:about="#article1">
+  <rdf:type rdf:resource="#Article"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#computer1">
+  <rdf:type rdf:resource="#Computer"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#collegeofcomputerscience1">
+  <rdf:type rdf:resource="#CollegeOfComputerScience"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#book1">
+  <rdf:type rdf:resource="#Book"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#math1">
+  <rdf:type rdf:resource="#Math"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#collegeofcomputerscience2">
+  <rdf:type rdf:resource="#CollegeOfComputerScience"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#article2">
+  <rdf:type rdf:resource="#Article"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#computer2">
+  <rdf:type rdf:resource="#Computer"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#collegeofcomputerscience3">
+  <rdf:type rdf:resource="#CollegeOfComputerScience"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#book2">
+  <rdf:type rdf:resource="#Book"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#math2">
+  <rdf:type rdf:resource="#Math"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#collegeofcomputerscience4">
+  <rdf:type rdf:resource="#CollegeOfComputerScience"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#article3">
+  <rdf:type rdf:resource="#Article"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#computer3">
+  <rdf:type rdf:resource="#Computer"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#collegeofcomputerscience5">
+  <rdf:type rdf:resource="#CollegeOfComputerScience"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#book3">
+  <rdf:type rdf:resource="#Book"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#math3">
+  <rdf:type rdf:resource="#Math"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#collegeofcomputerscience6">
+  <rdf:type rdf:resource="#CollegeOfComputerScience"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#article4">
+  <rdf:type rdf:resource="#Article"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#computer4">
+  <rdf:type rdf:resource="#Computer"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#collegeofcomputerscience7">
+  <rdf:type rdf:resource="#CollegeOfComputerScience"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#book4">
+  <rdf:type rdf:resource="#Book"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#math4">
+  <rdf:type rdf:resource="#Math"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#collegeofcomputerscience8">
+  <rdf:type rdf:resource="#CollegeOfComputerScience"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#AI_for_Beginners">
+  <rdf:type rdf:resource="#Document"/>
+  <hasType rdf:resource="#article13"/>
+  <hasCategory rdf:resource="#computer14"/>
+  <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AI for Beginners</hasTitle>
+  <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">John Doe</hasAuthor>
+  <hasDatePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-06-10</hasDatePublished>
+  <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TechPress</hasPublisher>
+  <hasAbstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An introduction to AI basics in Computer Science.</hasAbstract>
+  <hasKeywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AI, Machine Learning, Artificial Intelligence</hasKeywords>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#article7">
+  <rdf:type rdf:resource="#Article"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#computer7">
+  <rdf:type rdf:resource="#Computer"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#article6">
+  <rdf:type rdf:resource="#Article"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#computer6">
+  <rdf:type rdf:resource="#Computer"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#article5">
+  <rdf:type rdf:resource="#Article"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#computer5">
+  <rdf:type rdf:resource="#Computer"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#History_of_Law">
+  <rdf:type rdf:resource="#Document"/>
+  <hasType rdf:resource="#book20"/>
+  <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">History of Law</hasTitle>
+  <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jane Smith</hasAuthor>
+  <hasDatePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-04-22</hasDatePublished>
+  <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LawWorld</hasPublisher>
+  <hasKeywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Law, Government</hasKeywords>
+  <hasAbstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A timeline of law development.</hasAbstract>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#book9">
+  <rdf:type rdf:resource="#Book"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#book7">
+  <rdf:type rdf:resource="#Book"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#book5">
+  <rdf:type rdf:resource="#Book"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Calculus_Made_Easy">
+  <rdf:type rdf:resource="#Document"/>
+  <hasType rdf:resource="#book21"/>
+  <hasCategory rdf:resource="#math13"/>
+  <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calculus Made Easy</hasTitle>
+  <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alan Turing</hasAuthor>
+  <hasDatePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-09-01</hasDatePublished>
+  <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MathBooks</hasPublisher>
+  <hasKeywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calculus, Math</hasKeywords>
+  <hasAbstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An easy guide to differential calculus.</hasAbstract>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#book10">
+  <rdf:type rdf:resource="#Book"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#math7">
+  <rdf:type rdf:resource="#Math"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#book8">
+  <rdf:type rdf:resource="#Book"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#math6">
+  <rdf:type rdf:resource="#Math"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#book6">
+  <rdf:type rdf:resource="#Book"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#math5">
+  <rdf:type rdf:resource="#Math"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#AI_in_Healthcare">
+  <rdf:type rdf:resource="#Document"/>
+  <hasType rdf:resource="#article22"/>
+  <hasCategory rdf:resource="#computer24"/>
+  <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AI in Healthcare</hasTitle>
+  <hasKeywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AI, Healthcare, Diagnosis</hasKeywords>
+  <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mia Doctor</hasAuthor>
+  <hasDatePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-12-04</hasDatePublished>
+  <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MedAI</hasPublisher>
+  <hasAbstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discusses how AI is changing the medical field.</hasAbstract>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#research1">
+  <rdf:type rdf:resource="#Research"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#science1">
+  <rdf:type rdf:resource="#Science"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Advanced_Calculus">
+  <rdf:type rdf:resource="#Document"/>
+  <hasType rdf:resource="#book22"/>
+  <hasCategory rdf:resource="#math14"/>
+  <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Advanced Calculus</hasTitle>
+  <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Isaac Newton</hasAuthor>
+  <hasDatePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-11-03</hasDatePublished>
+  <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MathBooks Inc.</hasPublisher>
+  <hasKeywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calculus, Integrals, Derivatives</hasKeywords>
+  <hasAbstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A deeper look into multivariable calculus.</hasAbstract>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#book11">
+  <rdf:type rdf:resource="#Book"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#math8">
+  <rdf:type rdf:resource="#Math"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Digital_Law">
+  <rdf:type rdf:resource="#Document"/>
+  <hasType rdf:resource="#article14"/>
+  <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Digital Law</hasTitle>
+  <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Emily Clark</hasAuthor>
+  <hasDatePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-12</hasDatePublished>
+  <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LawPress</hasPublisher>
+  <hasKeywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cyber Law, Technology</hasKeywords>
+  <hasAbstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study of legal challenges in digital transformation.</hasAbstract>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#article8">
+  <rdf:type rdf:resource="#Article"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Physics_of_the_Future">
+  <rdf:type rdf:resource="#Document"/>
+  <hasType rdf:resource="#book23"/>
+  <hasCategory rdf:resource="#science7"/>
+  <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physics of the Future</hasTitle>
+  <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Michio Kaku</hasAuthor>
+  <hasDatePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-05-21</hasDatePublished>
+  <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SciPub</hasPublisher>
+  <hasKeywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physics, Future, Science</hasKeywords>
+  <hasAbstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Predicting scientific advancements in the next century.</hasAbstract>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#book12">
+  <rdf:type rdf:resource="#Book"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#science2">
+  <rdf:type rdf:resource="#Science"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Quantum_Algorithms">
+  <rdf:type rdf:resource="#Document"/>
+  <hasType rdf:resource="#research8"/>
+  <hasCategory rdf:resource="#computer15"/>
+  <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quantum Algorithms</hasTitle>
+  <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">David Deutsch</hasAuthor>
+  <hasDatePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-01-10</hasDatePublished>
+  <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">QuantumBooks</hasPublisher>
+  <hasKeywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quantum Computing, Algorithms</hasKeywords>
+  <hasAbstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A review of popular quantum computing algorithms.</hasAbstract>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#research2">
+  <rdf:type rdf:resource="#Research"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#computer8">
+  <rdf:type rdf:resource="#Computer"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Introduction_to_Logic">
+  <rdf:type rdf:resource="#Document"/>
+  <hasType rdf:resource="#book24"/>
+  <hasCategory rdf:resource="#math15"/>
+  <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Introduction to Logic</hasTitle>
+  <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aristotle</hasAuthor>
+  <hasDatePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-03-14</hasDatePublished>
+  <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LogicWorks</hasPublisher>
+  <hasKeywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Logic, Philosophy</hasKeywords>
+  <hasAbstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fundamentals of logical reasoning.</hasAbstract>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#book13">
+  <rdf:type rdf:resource="#Book"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#math9">
+  <rdf:type rdf:resource="#Math"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Constitutional_Development">
+  <rdf:type rdf:resource="#Document"/>
+  <hasType rdf:resource="#research9"/>
+  <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Constitutional Development</hasTitle>
+  <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Robert Greene</hasAuthor>
+  <hasDatePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-06-19</hasDatePublished>
+  <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LawWorld</hasPublisher>
+  <hasKeywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Law, Constitution</hasKeywords>
+  <hasAbstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A historical review of constitutional reforms.</hasAbstract>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#research3">
+  <rdf:type rdf:resource="#Research"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Machine_Learning_Basics">
+  <rdf:type rdf:resource="#Document"/>
+  <hasType rdf:resource="#book25"/>
+  <hasCategory rdf:resource="#computer16"/>
+  <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Machine Learning Basics</hasTitle>
+  <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Andrew Ng</hasAuthor>
+  <hasDatePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-10-05</hasDatePublished>
+  <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MLBooks</hasPublisher>
+  <hasKeywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Machine Learning, AI</hasKeywords>
+  <hasAbstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Beginner's guide to machine learning.</hasAbstract>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#book14">
+  <rdf:type rdf:resource="#Book"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#computer9">
+  <rdf:type rdf:resource="#Computer"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Scientific_Method">
+  <rdf:type rdf:resource="#Document"/>
+  <hasType rdf:resource="#article15"/>
+  <hasCategory rdf:resource="#science8"/>
+  <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Scientific Method</hasTitle>
+  <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Francis Bacon</hasAuthor>
+  <hasDatePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-01-30</hasDatePublished>
+  <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ScienceFoundry</hasPublisher>
+  <hasKeywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Experiment, Hypothesis</hasKeywords>
+  <hasAbstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Foundations of the scientific method.</hasAbstract>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#article9">
+  <rdf:type rdf:resource="#Article"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#science3">
+  <rdf:type rdf:resource="#Science"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#AI_and_Privacy">
+  <rdf:type rdf:resource="#Document"/>
+  <hasType rdf:resource="#research10"/>
+  <hasCategory rdf:resource="#computer17"/>
+  <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AI and Privacy</hasTitle>
+  <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Susan Black</hasAuthor>
+  <hasDatePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-09-23</hasDatePublished>
+  <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TechLaw</hasPublisher>
+  <hasKeywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AI, Privacy, Ethics</hasKeywords>
+  <hasAbstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Legal and ethical concerns about AI and data privacy.</hasAbstract>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#research4">
+  <rdf:type rdf:resource="#Research"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#computer10">
+  <rdf:type rdf:resource="#Computer"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Numerical_Methods">
+  <rdf:type rdf:resource="#Document"/>
+  <hasType rdf:resource="#book26"/>
+  <hasCategory rdf:resource="#math16"/>
+  <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Numerical Methods</hasTitle>
+  <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leonhard Euler</hasAuthor>
+  <hasDatePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-02-07</hasDatePublished>
+  <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MathPress</hasPublisher>
+  <hasKeywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Numerical Analysis, Algorithms</hasKeywords>
+  <hasAbstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Introduction to numerical computations.</hasAbstract>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#book15">
+  <rdf:type rdf:resource="#Book"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#math10">
+  <rdf:type rdf:resource="#Math"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Internet_Governance">
+  <rdf:type rdf:resource="#Document"/>
+  <hasType rdf:resource="#article16"/>
+  <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Internet Governance</hasTitle>
+  <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tim Berners-Lee</hasAuthor>
+  <hasDatePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-04-28</hasDatePublished>
+  <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WebPress</hasPublisher>
+  <hasKeywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Internet, Law, Regulation</hasKeywords>
+  <hasAbstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Understanding global policies for the internet.</hasAbstract>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#article10">
+  <rdf:type rdf:resource="#Article"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Mobile_App_Development">
+  <rdf:type rdf:resource="#Document"/>
+  <hasType rdf:resource="#book27"/>
+  <hasCategory rdf:resource="#computer18"/>
+  <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mobile App Development</hasTitle>
+  <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grace Hopper</hasAuthor>
+  <hasDatePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-07-16</hasDatePublished>
+  <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CodeHouse</hasPublisher>
+  <hasKeywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Android, iOS, React Native</hasKeywords>
+  <hasAbstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Best practices in building mobile applications.</hasAbstract>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#book16">
+  <rdf:type rdf:resource="#Book"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#computer11">
+  <rdf:type rdf:resource="#Computer"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Environmental_Science">
+  <rdf:type rdf:resource="#Document"/>
+  <hasType rdf:resource="#book28"/>
+  <hasCategory rdf:resource="#science9"/>
+  <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Environmental Science</hasTitle>
+  <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rachel Carson</hasAuthor>
+  <hasDatePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-11-09</hasDatePublished>
+  <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EcoBooks</hasPublisher>
+  <hasKeywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ecology, Environment</hasKeywords>
+  <hasAbstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Introduction to environmental challenges and sustainability.</hasAbstract>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#book17">
+  <rdf:type rdf:resource="#Book"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#science4">
+  <rdf:type rdf:resource="#Science"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Historical_Mathematics">
+  <rdf:type rdf:resource="#Document"/>
+  <hasType rdf:resource="#research11"/>
+  <hasCategory rdf:resource="#math17"/>
+  <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Historical Mathematics</hasTitle>
+  <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Carl Gauss</hasAuthor>
+  <hasDatePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-12-20</hasDatePublished>
+  <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MathRoots</hasPublisher>
+  <hasKeywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Math, History</hasKeywords>
+  <hasAbstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Impact of mathematics on ancient civilizations.</hasAbstract>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#research5">
+  <rdf:type rdf:resource="#Research"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#math11">
+  <rdf:type rdf:resource="#Math"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Criminal_Law_Basics">
+  <rdf:type rdf:resource="#Document"/>
+  <hasType rdf:resource="#book29"/>
+  <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Criminal Law Basics</hasTitle>
+  <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alan Shore</hasAuthor>
+  <hasDatePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-03-01</hasDatePublished>
+  <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LawToday</hasPublisher>
+  <hasKeywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Crime, Law, Justice</hasKeywords>
+  <hasAbstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Introduction to criminal law principles.</hasAbstract>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#book18">
+  <rdf:type rdf:resource="#Book"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Cloud_Computing_Essentials">
+  <rdf:type rdf:resource="#Document"/>
+  <hasType rdf:resource="#article17"/>
+  <hasCategory rdf:resource="#computer19"/>
+  <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cloud Computing Essentials</hasTitle>
+  <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeff Bezos</hasAuthor>
+  <hasDatePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-06-04</hasDatePublished>
+  <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CloudBooks</hasPublisher>
+  <hasKeywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cloud, AWS, Azure</hasKeywords>
+  <hasAbstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Overview of modern cloud platforms.</hasAbstract>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#article11">
+  <rdf:type rdf:resource="#Article"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#computer12">
+  <rdf:type rdf:resource="#Computer"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Statistics_for_Engineers">
+  <rdf:type rdf:resource="#Document"/>
+  <hasType rdf:resource="#book30"/>
+  <hasCategory rdf:resource="#math18"/>
+  <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Statistics for Engineers</hasTitle>
+  <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pierre-Simon Laplace</hasAuthor>
+  <hasDatePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-10-19</hasDatePublished>
+  <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">StatPress</hasPublisher>
+  <hasKeywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Statistics, Engineering</hasKeywords>
+  <hasAbstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applied statistics in engineering fields.</hasAbstract>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#book19">
+  <rdf:type rdf:resource="#Book"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#math12">
+  <rdf:type rdf:resource="#Math"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#AI_in_Legal_Analysis">
+  <rdf:type rdf:resource="#Document"/>
+  <hasType rdf:resource="#research12"/>
+  <hasCategory rdf:resource="#computer20"/>
+  <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AI in Legal Analysis</hasTitle>
+  <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harvey Specter</hasAuthor>
+  <hasDatePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-05-13</hasDatePublished>
+  <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LegalTech</hasPublisher>
+  <hasKeywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AI, Law, Prediction</hasKeywords>
+  <hasAbstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Using AI to predict legal outcomes.</hasAbstract>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#research6">
+  <rdf:type rdf:resource="#Research"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#computer13">
+  <rdf:type rdf:resource="#Computer"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Biotech_Revolution">
+  <rdf:type rdf:resource="#Document"/>
+  <hasType rdf:resource="#article18"/>
+  <hasCategory rdf:resource="#science10"/>
+  <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biotech Revolution</hasTitle>
+  <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">James Watson</hasAuthor>
+  <hasDatePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-09-27</hasDatePublished>
+  <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BioPress</hasPublisher>
+  <hasKeywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biotech, DNA</hasKeywords>
+  <hasAbstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Recent innovations in biotechnology.</hasAbstract>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#article12">
+  <rdf:type rdf:resource="#Article"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#science5">
+  <rdf:type rdf:resource="#Science"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#article13">
+  <rdf:type rdf:resource="#Article"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#computer14">
+  <rdf:type rdf:resource="#Computer"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#book20">
+  <rdf:type rdf:resource="#Book"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#book21">
+  <rdf:type rdf:resource="#Book"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#math13">
+  <rdf:type rdf:resource="#Math"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#research7">
+  <rdf:type rdf:resource="#Research"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#science6">
+  <rdf:type rdf:resource="#Science"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#book22">
+  <rdf:type rdf:resource="#Book"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#math14">
+  <rdf:type rdf:resource="#Math"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#article14">
+  <rdf:type rdf:resource="#Article"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#book23">
+  <rdf:type rdf:resource="#Book"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#science7">
+  <rdf:type rdf:resource="#Science"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#research8">
+  <rdf:type rdf:resource="#Research"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#computer15">
+  <rdf:type rdf:resource="#Computer"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#book24">
+  <rdf:type rdf:resource="#Book"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#math15">
+  <rdf:type rdf:resource="#Math"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#research9">
+  <rdf:type rdf:resource="#Research"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#book25">
+  <rdf:type rdf:resource="#Book"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#computer16">
+  <rdf:type rdf:resource="#Computer"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#article15">
+  <rdf:type rdf:resource="#Article"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#science8">
+  <rdf:type rdf:resource="#Science"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#research10">
+  <rdf:type rdf:resource="#Research"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#computer17">
+  <rdf:type rdf:resource="#Computer"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#book26">
+  <rdf:type rdf:resource="#Book"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#math16">
+  <rdf:type rdf:resource="#Math"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#article16">
+  <rdf:type rdf:resource="#Article"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#book27">
+  <rdf:type rdf:resource="#Book"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#computer18">
+  <rdf:type rdf:resource="#Computer"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#book28">
+  <rdf:type rdf:resource="#Book"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#science9">
+  <rdf:type rdf:resource="#Science"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#research11">
+  <rdf:type rdf:resource="#Research"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#math17">
+  <rdf:type rdf:resource="#Math"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#book29">
+  <rdf:type rdf:resource="#Book"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#article17">
+  <rdf:type rdf:resource="#Article"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#computer19">
+  <rdf:type rdf:resource="#Computer"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#book30">
+  <rdf:type rdf:resource="#Book"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#math18">
+  <rdf:type rdf:resource="#Math"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#research12">
+  <rdf:type rdf:resource="#Research"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#computer20">
+  <rdf:type rdf:resource="#Computer"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#article18">
+  <rdf:type rdf:resource="#Article"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#science10">
+  <rdf:type rdf:resource="#Science"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Quantum_Computing_Basics">
+  <rdf:type rdf:resource="#Document"/>
+  <hasType rdf:resource="#article19"/>
+  <hasCategory rdf:resource="#computer21"/>
+  <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quantum Computing Basics</hasTitle>
+  <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alice Quantum</hasAuthor>
+  <hasDatePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-11-05</hasDatePublished>
+  <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FutureTech</hasPublisher>
+  <hasKeywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quantum, Computing, Qubits</hasKeywords>
+  <hasAbstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An introduction to the fundamentals of quantum computing.</hasAbstract>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#article19">
+  <rdf:type rdf:resource="#Article"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#computer21">
+  <rdf:type rdf:resource="#Computer"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Advanced_Thermodynamics">
+  <rdf:type rdf:resource="#Document"/>
+  <hasType rdf:resource="#research13"/>
+  <hasCategory rdf:resource="#science11"/>
+  <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Advanced Thermodynamics</hasTitle>
+  <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bob Heat</hasAuthor>
+  <hasDatePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-12</hasDatePublished>
+  <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EngiPress</hasPublisher>
+  <hasKeywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thermodynamics, Heat, Physics</hasKeywords>
+  <hasAbstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detailed discussion on thermodynamics laws and applications.</hasAbstract>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#research13">
+  <rdf:type rdf:resource="#Research"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#science11">
+  <rdf:type rdf:resource="#Science"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Political_Theories_101">
+  <rdf:type rdf:resource="#Document"/>
+  <hasType rdf:resource="#book31"/>
+  <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Political Theories 101</hasTitle>
+  <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eva Rights</hasAuthor>
+  <hasDatePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-02-18</hasDatePublished>
+  <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlobalGov</hasPublisher>
+  <hasKeywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Politics, Democracy, Theory</hasKeywords>
+  <hasAbstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Covers classical and modern political ideologies.</hasAbstract>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#book31">
+  <rdf:type rdf:resource="#Book"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Linear_Algebra_Applications">
+  <rdf:type rdf:resource="#Document"/>
+  <hasType rdf:resource="#book32"/>
+  <hasCategory rdf:resource="#math19"/>
+  <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Linear Algebra Applications</hasTitle>
+  <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chris Matrix</hasAuthor>
+  <hasDatePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-01-25</hasDatePublished>
+  <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MathLab</hasPublisher>
+  <hasKeywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matrix, Vectors, Linear Algebra</hasKeywords>
+  <hasAbstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applications of linear algebra in engineering and science.</hasAbstract>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#book32">
+  <rdf:type rdf:resource="#Book"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#math19">
+  <rdf:type rdf:resource="#Math"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Deep_Learning_with_Python">
+  <rdf:type rdf:resource="#Document"/>
+  <hasType rdf:resource="#article20"/>
+  <hasCategory rdf:resource="#computer22"/>
+  <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deep Learning with Python</hasTitle>
+  <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sam Neural</hasAuthor>
+  <hasDatePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-03-14</hasDatePublished>
+  <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AIBooks</hasPublisher>
+  <hasKeywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deep Learning, Python, Neural Networks</hasKeywords>
+  <hasAbstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A practical guide to deep learning using Python.</hasAbstract>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#article20">
+  <rdf:type rdf:resource="#Article"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#computer22">
+  <rdf:type rdf:resource="#Computer"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Modern_Genetics">
+  <rdf:type rdf:resource="#Document"/>
+  <hasType rdf:resource="#research14"/>
+  <hasCategory rdf:resource="#science12"/>
+  <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Modern Genetics</hasTitle>
+  <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lana Gene</hasAuthor>
+  <hasDatePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-05-09</hasDatePublished>
+  <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BioWorld</hasPublisher>
+  <hasKeywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Genetics, DNA, Evolution</hasKeywords>
+  <hasAbstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Explores the principles of genetics and genetic engineering.</hasAbstract>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#research14">
+  <rdf:type rdf:resource="#Research"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#science12">
+  <rdf:type rdf:resource="#Science"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Corporate_Law_Explained">
+  <rdf:type rdf:resource="#Document"/>
+  <hasType rdf:resource="#book33"/>
+  <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Corporate Law Explained</hasTitle>
+  <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Karen Legal</hasAuthor>
+  <hasDatePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-10-28</hasDatePublished>
+  <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LawInsider</hasPublisher>
+  <hasKeywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Law, Business, Contracts</hasKeywords>
+  <hasAbstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Basic principles of corporate law for students.</hasAbstract>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#book33">
+  <rdf:type rdf:resource="#Book"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Statistics_for_Data_Science">
+  <rdf:type rdf:resource="#Document"/>
+  <hasType rdf:resource="#article21"/>
+  <hasCategory rdf:resource="#math20"/>
+  <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Statistics for Data Science</hasTitle>
+  <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nina Stats</hasAuthor>
+  <hasDatePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-08-17</hasDatePublished>
+  <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DataPub</hasPublisher>
+  <hasKeywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Statistics, Data, Probability</hasKeywords>
+  <hasAbstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Statistics explained in the context of data science.</hasAbstract>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#article21">
+  <rdf:type rdf:resource="#Article"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#math20">
+  <rdf:type rdf:resource="#Math"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Intro_to_Philosophy">
+  <rdf:type rdf:resource="#Document"/>
+  <hasType rdf:resource="#book34"/>
+  <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intro to Philosophy</hasTitle>
+  <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mark Thinker</hasAuthor>
+  <hasDatePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-09-30</hasDatePublished>
+  <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HumanitiesInc</hasPublisher>
+  <hasKeywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Philosophy, Ethics, Logic</hasKeywords>
+  <hasAbstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Explores human reasoning, logic, and philosophical thought.</hasAbstract>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#book34">
+  <rdf:type rdf:resource="#Book"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Machine_Learning_in_Practice">
+  <rdf:type rdf:resource="#Document"/>
+  <hasType rdf:resource="#research15"/>
+  <hasCategory rdf:resource="#computer23"/>
+  <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Machine Learning in Practice</hasTitle>
+  <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tom Bot</hasAuthor>
+  <hasDatePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-06-02</hasDatePublished>
+  <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AIMinds</hasPublisher>
+  <hasKeywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ML, AI, Algorithms</hasKeywords>
+  <hasAbstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Real-world applications of machine learning.</hasAbstract>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#research15">
+  <rdf:type rdf:resource="#Research"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#computer23">
+  <rdf:type rdf:resource="#Computer"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Organic_Chemistry_Essentials">
+  <rdf:type rdf:resource="#Document"/>
+  <hasType rdf:resource="#book35"/>
+  <hasCategory rdf:resource="#science13"/>
+  <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organic Chemistry Essentials</hasTitle>
+  <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sarah Bond</hasAuthor>
+  <hasDatePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-01-11</hasDatePublished>
+  <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChemCentral</hasPublisher>
+  <hasKeywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chemistry, Organic, Reactions</hasKeywords>
+  <hasAbstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Covers key organic chemistry reactions and mechanisms.</hasAbstract>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#book35">
+  <rdf:type rdf:resource="#Book"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#science13">
+  <rdf:type rdf:resource="#Science"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#article22">
+  <rdf:type rdf:resource="#Article"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#computer24">
+  <rdf:type rdf:resource="#Computer"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Electric_Circuits_101">
+  <rdf:type rdf:resource="#Document"/>
+  <hasType rdf:resource="#book36"/>
+  <hasCategory rdf:resource="#science14"/>
+  <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electric Circuits 101</hasTitle>
+  <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dave Volt</hasAuthor>
+  <hasDatePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-04-22</hasDatePublished>
+  <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EEPress</hasPublisher>
+  <hasKeywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Circuits, Electronics, Voltage</hasKeywords>
+  <hasAbstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fundamentals of circuit theory for engineering students.</hasAbstract>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#book36">
+  <rdf:type rdf:resource="#Book"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#science14">
+  <rdf:type rdf:resource="#Science"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ancient_Civilizations">
+  <rdf:type rdf:resource="#Document"/>
+  <hasType rdf:resource="#book37"/>
+  <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ancient Civilizations</hasTitle>
+  <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rachel Time</hasAuthor>
+  <hasDatePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-11-13</hasDatePublished>
+  <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HistoryNow</hasPublisher>
+  <hasKeywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Civilization, Ancient, Culture</hasKeywords>
+  <hasAbstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An overview of ancient civilizations and their contributions.</hasAbstract>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#book37">
+  <rdf:type rdf:resource="#Book"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Big_Data_Analytics">
+  <rdf:type rdf:resource="#Document"/>
+  <hasType rdf:resource="#research16"/>
+  <hasCategory rdf:resource="#computer25"/>
+  <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Big Data Analytics</hasTitle>
+  <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leo Byte</hasAuthor>
+  <hasDatePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-10-03</hasDatePublished>
+  <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TechMinds</hasPublisher>
+  <hasKeywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Big Data, Analytics, Hadoop</hasKeywords>
+  <hasAbstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Techniques and tools for analyzing large datasets.</hasAbstract>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#research16">
+  <rdf:type rdf:resource="#Research"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#computer25">
+  <rdf:type rdf:resource="#Computer"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Introduction_to_Robotics">
+  <rdf:type rdf:resource="#Document"/>
+  <hasType rdf:resource="#book38"/>
+  <hasCategory rdf:resource="#computer26"/>
+  <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Introduction to Robotics</hasTitle>
+  <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aaron Gear</hasAuthor>
+  <hasDatePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-02-20</hasDatePublished>
+  <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Robotika</hasPublisher>
+  <hasKeywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Robotics, Automation, Control</hasKeywords>
+  <hasAbstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Explores the basics of robotics and automation.</hasAbstract>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#book38">
+  <rdf:type rdf:resource="#Book"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#computer26">
+  <rdf:type rdf:resource="#Computer"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Differential_Equations_Demystified">
+  <rdf:type rdf:resource="#Document"/>
+  <hasType rdf:resource="#book39"/>
+  <hasCategory rdf:resource="#math21"/>
+  <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Differential Equations Demystified</hasTitle>
+  <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eliza Solve</hasAuthor>
+  <hasDatePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-05-16</hasDatePublished>
+  <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MathEase</hasPublisher>
+  <hasKeywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Differential, Equations, Calculus</hasKeywords>
+  <hasAbstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Understanding differential equations through real-life models.</hasAbstract>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#book39">
+  <rdf:type rdf:resource="#Book"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#math21">
+  <rdf:type rdf:resource="#Math"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ethics_in_Modern_Society">
+  <rdf:type rdf:resource="#Document"/>
+  <hasType rdf:resource="#article23"/>
+  <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ethics in Modern Society</hasTitle>
+  <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grace Morals</hasAuthor>
+  <hasDatePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-12-07</hasDatePublished>
+  <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ThinkersPub</hasPublisher>
+  <hasKeywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ethics, Morality, Philosophy</hasKeywords>
+  <hasAbstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ethical theories and their application in modern issues.</hasAbstract>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#article23">
+  <rdf:type rdf:resource="#Article"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Environmental_Science_Today">
+  <rdf:type rdf:resource="#Document"/>
+  <hasType rdf:resource="#article24"/>
+  <hasCategory rdf:resource="#science15"/>
+  <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Environmental Science Today</hasTitle>
+  <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Max Green</hasAuthor>
+  <hasDatePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-04-11</hasDatePublished>
+  <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EcoBooks</hasPublisher>
+  <hasKeywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Environment, Sustainability, Climate</hasKeywords>
+  <hasAbstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discusses key environmental issues and solutions.</hasAbstract>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#article24">
+  <rdf:type rdf:resource="#Article"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#science15">
+  <rdf:type rdf:resource="#Science"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Natural_Language_Processing_with_AI">
+  <rdf:type rdf:resource="#Document"/>
+  <hasType rdf:resource="#research17"/>
+  <hasCategory rdf:resource="#computer27"/>
+  <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Natural Language Processing with AI</hasTitle>
+  <hasAuthor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Luke Syntax</hasAuthor>
+  <hasDatePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-08</hasDatePublished>
+  <hasPublisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AIExpress</hasPublisher>
+  <hasKeywords rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NLP, Language, Machine Learning</hasKeywords>
+  <hasAbstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A look into how machines understand human language.</hasAbstract>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#research17">
+  <rdf:type rdf:resource="#Research"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#computer27">
+  <rdf:type rdf:resource="#Computer"/>
+</owl:NamedIndividual>
+
+
+</rdf:RDF>
